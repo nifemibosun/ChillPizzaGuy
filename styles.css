@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  height: 100vh;
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#about,
+#features,
+#contact {
+  padding: 20px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+}
