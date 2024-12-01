@@ -4,95 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PotatoOrbitCoin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">PotatoOrbitCoin</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">PotatoOrbitCoin</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+          <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
+          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
         </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="hero text-center text-white d-flex justify-content-center align-items-center">
-    <div>
-      <h1>Welcome to PotatoOrbitCoin</h1>
-      <p>The quirky cryptocurrency that's out of this world!</p>
-      <a href="#about" class="btn btn-primary">Learn More</a>
+      </nav>
     </div>
   </header>
 
-  <section id="about" class="container my-5">
-    <h2>About PotatoOrbitCoin</h2>
-    <p>PotatoOrbitCoin is a revolutionary meme-based cryptocurrency orbiting the financial cosmos. Join us in this fun and innovative journey!</p>
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 text-white text-center py-20">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold">Welcome to PotatoOrbitCoin</h2>
+      <p class="mt-4 text-lg">Where innovation meets fun! Join the revolution today.</p>
+      <a href="#about" class="mt-6 inline-block px-6 py-3 bg-white text-indigo-600 font-bold rounded-full shadow hover:bg-gray-200">Learn More</a>
+    </div>
   </section>
 
-  <section id="features" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center">Features</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h3>Secure</h3>
-              <p>Powered by blockchain for maximum security.</p>
-            </div>
-          </div>
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">About PotatoOrbitCoin</h2>
+      <p class="text-lg text-gray-600">PotatoOrbitCoin (POBTC) is the most innovative and fun cryptocurrency, inspired by the simple joy of a potato orbiting the Earth. Invest in something unique, fun, and revolutionary.</p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="bg-gray-200 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Why Choose PotatoOrbitCoin?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded shadow">
+          <h3 class="font-bold text-xl mb-4">Secure & Decentralized</h3>
+          <p class="text-gray-600">POBTC ensures maximum security through blockchain technology.</p>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h3>Fun</h3>
-              <p>Quirky and entertaining like no other coin.</p>
-            </div>
-          </div>
+        <div class="p-6 bg-white rounded shadow">
+          <h3 class="font-bold text-xl mb-4">Community-Driven</h3>
+          <p class="text-gray-600">Engage with a growing community that supports fun and innovation.</p>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body text-center">
-              <h3>Community Driven</h3>
-              <p>Built for and supported by the community.</p>
-            </div>
-          </div>
+        <div class="p-6 bg-white rounded shadow">
+          <h3 class="font-bold text-xl mb-4">Innovative Concept</h3>
+          <p class="text-gray-600">A crypto inspired by a potato orbiting the Earth. It’s surreal and fun!</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="container my-5">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="name" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" required>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </section>
-
-  <footer class="text-center bg-dark text-white py-3">
-    <p>&copy; 2024 PotatoOrbitCoin. All rights reserved.</p>
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto text-center">
+      <h3 class="text-lg font-bold mb-4">Get in Touch</h3>
+      <form id="contactForm" class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded bg-gray-700 text-white" required>
+        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded bg-gray-700 text-white" required>
+        <textarea placeholder="Your Message" class="w-full px-4 py-2 rounded bg-gray-700 text-white" required></textarea>
+        <button type="submit" class="px-6 py-2 bg-indigo-600 rounded text-white hover:bg-indigo-500">Send</button>
+      </form>
+      <p class="mt-6">© 2024 PotatoOrbitCoin. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
