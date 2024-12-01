@@ -1,68 +1,40 @@
-/* General */
+/* General Styling */
 body {
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-/* Navbar */
+/* Header Section */
 header {
-  border-bottom: 1px solid #e5e5e5;
+  background-color: #343a40;
 }
 
-header nav ul {
-  list-style: none;
-  padding: 0;
+header img {
+  transition: transform 0.2s ease-in-out;
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+header button {
+  border: none;
+  border-radius: 5px;
+}
+
+/* Contract Address */
+section p {
   margin: 0;
-}
-
-header nav ul li {
-  display: inline;
-}
-
-/* Hero Section */
-section.bg-indigo-600 {
-  color: #fff;
-  background: linear-gradient(to bottom, #5a67d8, #434190);
-}
-
-section.bg-indigo-600 a {
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* Features */
-section#features div {
-  transition: transform 0.3s ease-in-out;
-}
-
-section#features div:hover {
-  transform: scale(1.05);
-}
-
-/* Contact Form */
-input, textarea {
-  border: 1px solid #ddd;
-  padding: 10px;
-  font-size: 16px;
-}
-
-button {
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  font-size: 1.2rem;
 }
 
 /* Footer */
 footer {
+  background-color: #343a40;
   color: #bbb;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: underline;
-  transition: color 0.3s ease-in-out;
-}
-
-footer a:hover {
-  color: #ddd;
+footer p {
+  margin: 0;
 }
