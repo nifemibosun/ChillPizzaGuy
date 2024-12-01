@@ -1,9 +1,3 @@
-// Smooth Scrolling for Navigation Links (if needed)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+document.querySelector('.buy-now').addEventListener('click', function () {
+  alert("Redirecting you to buy PotatoOrbitCoin!");
 });
