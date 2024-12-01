@@ -1,28 +1,68 @@
+/* General */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-.hero {
-  height: 100vh;
-  background: url('hero-image.jpg') no-repeat center center/cover;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+/* Navbar */
+header {
+  border-bottom: 1px solid #e5e5e5;
 }
 
-#about,
-#features,
-#contact {
-  padding: 20px;
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.card {
-  border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+header nav ul li {
+  display: inline;
 }
 
-footer {
-  background-color: #222;
+/* Hero Section */
+section.bg-indigo-600 {
   color: #fff;
+  background: linear-gradient(to bottom, #5a67d8, #434190);
+}
+
+section.bg-indigo-600 a {
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Features */
+section#features div {
+  transition: transform 0.3s ease-in-out;
+}
+
+section#features div:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+input, textarea {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  color: #bbb;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #ddd;
 }
