@@ -53,17 +53,6 @@ ul, ol {
   margin: 2em 0;
 }
 
-footer {
-  text-align: center;
-  background: #444;
-  color: #fff;
-  padding: 1em 0;
-}
-
-footer .contract-address {
-  color: #ffcc00;
-}
-
 .social-links img {
   width: 30px;
   height: 30px;
