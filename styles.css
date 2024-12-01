@@ -23,7 +23,19 @@ header button {
   border-radius: 5px;
 }
 
-/* Contract Address */
+/* About Us Section */
+section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Contract Address Section */
 section p {
   margin: 0;
   font-size: 1.2rem;
