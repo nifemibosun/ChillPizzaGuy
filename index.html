@@ -4,100 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PotatoOrbitCoin</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <!-- Navbar -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto p-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">PotatoOrbitCoin</h1>
-      <nav>
-        <ul class="flex space-x-4">
-          <li><a href="#about" class="hover:text-indigo-600">About</a></li>
-          <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
-          <li><a href="#contact" class="hover:text-indigo-600">Contact</a></li>
-        </ul>
-      </nav>
+<body>
+  <!-- Header with social links and Buy Now button -->
+  <header class="d-flex align-items-center justify-content-between p-3 bg-dark text-white">
+    <div class="d-flex align-items-center">
+      <a href="https://telegram.org" target="_blank" class="me-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" width="30">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="30">
+      </a>
     </div>
+    <button class="btn btn-primary btn-lg px-5">Buy Now</button>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-indigo-600 text-white text-center py-20">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-bold">Welcome to PotatoOrbitCoin</h2>
-      <p class="mt-4 text-lg">Where innovation meets fun! Join the revolution today.</p>
-      <a href="#about" class="mt-6 inline-block px-6 py-3 bg-white text-indigo-600 font-bold rounded-full shadow hover:bg-gray-200">Learn More</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="py-16">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">About PotatoOrbitCoin</h2>
-      <p class="text-lg text-gray-600">PotatoOrbitCoin (POBTC) is the most innovative and fun cryptocurrency, inspired by the simple joy of a potato orbiting the Earth. Invest in something unique, fun, and revolutionary.</p>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="bg-gray-200 py-16">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Why Choose PotatoOrbitCoin?</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-6 bg-white rounded shadow">
-          <h3 class="font-bold text-xl mb-4">Secure & Decentralized</h3>
-          <p class="text-gray-600">POBTC ensures maximum security through blockchain technology.</p>
-        </div>
-        <div class="p-6 bg-white rounded shadow">
-          <h3 class="font-bold text-xl mb-4">Community-Driven</h3>
-          <p class="text-gray-600">Engage with a growing community that supports fun and innovation.</p>
-        </div>
-        <div class="p-6 bg-white rounded shadow">
-          <h3 class="font-bold text-xl mb-4">Innovative Concept</h3>
-          <p class="text-gray-600">A crypto inspired by a potato orbiting the Earth. It’s surreal and fun!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Contract Address Section -->
-  <section id="contract" class="py-16">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Contract Address</h2>
-      <p class="text-gray-600">0x123456789abcdef123456789abcdef12345678</p>
-    </div>
+  <section class="text-center my-4">
+    <p class="fw-bold">Contract Address:</p>
+    <p class="text-muted">0xYourContractAddressHere</p>
   </section>
 
-  <!-- Social Media Links -->
-  <section class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto text-center">
-      <h2 class="text-lg font-bold mb-4">Follow Us</h2>
-      <div class="flex justify-center space-x-6">
-        <a href="https://t.me/PotatoOrbitCoin" target="_blank" class="hover:underline">Telegram</a>
-        <a href="https://twitter.com/PotatoOrbitCoin" target="_blank" class="hover:underline">Twitter</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Buy Now Button -->
-  <section class="py-16">
-    <div class="container mx-auto text-center">
-      <a href="https://pump.fun" target="_blank" class="px-6 py-3 bg-indigo-600 text-white font-bold rounded shadow hover:bg-indigo-500">Buy Now</a>
-    </div>
-  </section>
+  <!-- Other Sections (if any) -->
+  <main class="container mt-4">
+    <!-- Add any additional content here -->
+  </main>
 
   <!-- Footer -->
-  <footer id="contact" class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto text-center">
-      <h3 class="text-lg font-bold mb-4">Get in Touch</h3>
-      <form id="contactForm" class="space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded bg-gray-700 text-white" required>
-        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded bg-gray-700 text-white" required>
-        <textarea placeholder="Your Message" class="w-full px-4 py-2 rounded bg-gray-700 text-white" required></textarea>
-        <button type="submit" class="px-6 py-2 bg-indigo-600 rounded text-white hover:bg-indigo-500">Send</button>
-      </form>
-      <p class="mt-6">© 2024 PotatoOrbitCoin. All rights reserved.</p>
-    </div>
+  <footer class="text-center py-4 bg-dark text-white">
+    <p>&copy; 2024 PotatoOrbitCoin. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
