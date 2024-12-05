@@ -17,14 +17,17 @@ header {
 
 header .coin-name {
   font-size: 1.35rem;
-  font-weight: 500px;
+  font-weight: 800px;
   color: #222;
+  margin-left: 20px
 }
 
 header .social-links img {
-  width: 32px;
-  margin-left: 10px;
+  width: 27px;
+  height: 27px;
+  margin-right: 20px;
   cursor: pointer;
+  
 }
 
 /* Main Content */
