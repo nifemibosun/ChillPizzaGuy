@@ -19,14 +19,14 @@ header .coin-name {
   font-size: 1.35rem;
   font-weight: 10rem;
   color: #222;
-  margin-left: 20px
+  margin-left: 10px
 }
 
 header .social-links img {
   width: 20px;
   height: 20px;
   display: flex;
-  gap: 20px;
+  gap: 8px;
   cursor: pointer;
 }
 
