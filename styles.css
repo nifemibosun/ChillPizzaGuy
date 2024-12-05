@@ -17,6 +17,7 @@ header {
 
 header .coin-name {
   font-size: 1.35rem;
+  font-weight: 500px;
   color: #222;
 }
 
