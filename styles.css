@@ -22,10 +22,14 @@ header .coin-name {
   margin-left: 10px
 }
 
+header .social-links {
+  display: flex;
+  margin-right: 10px;
+}
+
 header .social-links img {
   width: 20px;
   height: 20px;
-  display: flex;
   gap: 8px;
   cursor: pointer;
 }
