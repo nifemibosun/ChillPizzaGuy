@@ -36,7 +36,10 @@ header .social-links img {
   margin-left: 15px;
 }
 
-/* Main Content */
+a {
+  text-decoration: none;
+}
+
 main {
   padding: 20px;
 }
