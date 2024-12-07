@@ -1,75 +1,109 @@
-/* General Reset */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
 }
 
-/* Navbar */
-nav {
-  background: #f4f4f4;
-  padding: 10px;
+header {
+  background-color: rgb(185, 183, 183);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container-div {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 header .coin-name {
-  font-size: 1.35rem;
-  font-weight: 10rem;
-  color: #222;
-  margin-left: 10px
-}
-
-header .social-links {
-  display: flex;
-  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 header .social-links img {
-  width: 20px;
-  height: 20px;
-  gap: 15px;
-  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
 }
 
 /* Main Content */
 main {
-  padding: 2rem;
+  padding: 20px;
 }
 
-.introduction {
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  font-size: 28px;
+  color: #444;
+}
+
+.cta {
+  text-align: center;
 }
 
 .cta .buy-now {
-  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
   padding: 10px 20px;
-  background: green;
-  color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: inline-block; 
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.cta .buy-now:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgb(185, 183, 183);
+  color: #fff;
+  height: 2rem;
+}
+
+.live-stats {
+  background-color: #eaf7ff;
+  padding: 20px;
+  margin-bottom: 40px;
   border-radius: 5px;
 }
 
-.about, .tokenomics, .roadmap {
-  margin-bottom: 2rem;
+#stats-container p {
+  font-size: 18px;
+  margin: 10px 0;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.pump-fun, .light-hearted-fud {
+  background-color: #fffbe6;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
 }
 
-ul li {
-  margin-bottom: 0.5rem;
+.pump-fun h2, .light-hearted-fud h2 {
+  color: #ff6f61;
 }
 
-/* Footer */
-footer {
-  background: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
+.pump-fun p, .light-hearted-fud p {
+  font-size: 16px;
+  color: #555;
 }
