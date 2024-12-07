@@ -75,9 +75,10 @@ section h2 {
 footer {
   text-align: center;
   padding: 20px 0;
+  font-size: 20px;
   background-color: rgb(185, 183, 183);
   color: #fff;
-  height: 2rem;
+  height: 4rem;
 }
 
 .live-stats {
