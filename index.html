@@ -13,6 +13,12 @@
             <div class="logo-image">🍕</div>
             <span>$PIZZA</span>
         </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#tokenomics">Tokenomics</a>
@@ -21,7 +27,7 @@
             <a href="#community">Community</a>
         </div>
         <a href="#" class="button">Buy Now</a>
-    </nav>
+    </nav>    
 
     <!-- Hero Section -->
     <section id="hero">
@@ -68,9 +74,46 @@
             <p>$PIZZA has a maximum supply of 10,000,000,000 tokens, representing the 10,000 BTC paid for those famous pizzas.</p>
             <div class="tokenomics-flex">
                 <div class="tokenomics-chart">
-                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #ccc;">
-                        [Tokenomics Chart Visualization]
-                    </div>
+                    <svg width="100%" height="100%" viewBox="0 0 400 400" style="min-height: 300px;">
+                        <!-- Tokenomics Pie Chart -->
+                        <!-- Community & Airdrop (40%) -->
+                        <path d="M200,200 L200,20 A180,180 0 0,1 344.7,128.8 Z" fill="#FF6B35" />
+                        
+                        <!-- Liquidity (30%) -->
+                        <path d="M200,200 L344.7,128.8 A180,180 0 0,1 303.9,339.1 Z" fill="#2E86AB" />
+                        
+                        <!-- Development (20%) -->
+                        <path d="M200,200 L303.9,339.1 A180,180 0 0,1 96.1,339.1 Z" fill="#FFD166" />
+                        
+                        <!-- Team (10%) -->
+                        <path d="M200,200 L96.1,339.1 A180,180 0 0,1 55.3,128.8 L200,200 Z" fill="#4CAF50" />
+                        
+                        <!-- Color Labels -->
+                        <g transform="translate(200, 200)">
+                            <!-- Community label (centered in its sector) -->
+                            <text x="0" y="-110" text-anchor="middle" fill="white" font-weight="bold" font-size="16">40%</text>
+                            <text x="0" y="-90" text-anchor="middle" fill="white" font-size="14">Community</text>
+                            
+                            <!-- Liquidity label -->
+                            <text x="100" y="60" text-anchor="middle" fill="white" font-weight="bold" font-size="16">30%</text>
+                            <text x="100" y="80" text-anchor="middle" fill="white" font-size="14">Liquidity</text>
+                            
+                            <!-- Development label -->
+                            <text x="0" y="120" text-anchor="middle" fill="white" font-weight="bold" font-size="16">20%</text>
+                            <text x="0" y="140" text-anchor="middle" fill="white" font-size="14">Development</text>
+                            
+                            <!-- Team label -->
+                            <text x="-90" y="50" text-anchor="middle" fill="white" font-weight="bold" font-size="16">10%</text>
+                            <text x="-90" y="70" text-anchor="middle" fill="white" font-size="14">Team</text>
+                        </g>
+                        
+                        <!-- Center circle -->
+                        <circle cx="200" cy="200" r="60" fill="#121212" />
+                        
+                        <!-- Center text -->
+                        <text x="200" y="190" text-anchor="middle" fill="white" font-weight="bold" font-size="18">$PIZZA</text>
+                        <text x="200" y="215" text-anchor="middle" fill="#cccccc" font-size="14">10B Supply</text>
+                    </svg>
                 </div>
                 <div class="tokenomics-details">
                     <div class="tokenomics-item">
@@ -205,28 +248,34 @@
             <p>Become part of the $PIZZA family and help shape the future of the project.</p>
             <div class="community-links">
                 <div class="community-item">
-                    <div class="community-icon">🐦</div>
-                    <h3>Twitter</h3>
+                    <div class="community-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#ffffff">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </div>
+                    <h3>X</h3>
                     <p>Follow us for the latest updates and news</p>
                     <a href="#" class="button">Follow</a>
                 </div>
                 <div class="community-item">
-                    <div class="community-icon">💬</div>
+                    <div class="community-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#ffffff">
+                            <path d="M20.317 4.369A19.791 19.791 0 0 0 15.725 3c-.184.328-.39.761-.534 1.104a18.315 18.315 0 0 0-5.383 0 12.6 12.6 0 0 0-.547-1.104 19.736 19.736 0 0 0-4.59 1.369c-2.91 4.273-3.705 8.428-3.305 12.537a19.994 19.994 0 0 0 5.932 2.974c.48-.649.91-1.339 1.284-2.057a12.88 12.88 0 0 1-2.016-.965c.17-.123.338-.252.5-.383a14.98 14.98 0 0 0 9.468 0c.163.136.332.264.5.383-.645.385-1.324.718-2.016.965.373.72.8 1.41 1.283 2.057a19.935 19.935 0 0 0 5.933-2.974c.484-4.715-.81-8.85-3.305-12.537zM8.06 13.826c-1.183 0-2.154-1.086-2.154-2.419 0-1.333.947-2.419 2.154-2.419 1.21 0 2.176 1.092 2.154 2.419 0 1.333-.947 2.419-2.154 2.419zm7.88 0c-1.183 0-2.154-1.086-2.154-2.419 0-1.333.947-2.419 2.154-2.419 1.21 0 2.176 1.092 2.154 2.419 0 1.333-.944 2.419-2.154 2.419z"/>
+                        </svg>
+                    </div>
                     <h3>Discord</h3>
                     <p>Join our vibrant community discussions</p>
                     <a href="#" class="button">Join</a>
                 </div>
                 <div class="community-item">
-                    <div class="community-icon">📱</div>
+                    <div class="community-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#ffffff">
+                            <path d="M9.978 15.536l-.403 5.649c.578 0 .829-.25 1.125-.548l2.7-2.575 5.596 4.083c1.026.566 1.752.27 2.012-.95l3.642-17.06c.371-1.715-.621-2.39-1.72-1.963L1.274 10.31c-1.66.656-1.642 1.6-.283 2.026l5.856 1.829L19.49 6.697c.637-.4 1.216-.178.74.257z"/>
+                        </svg>
+                    </div>
                     <h3>Telegram</h3>
                     <p>Get instant updates and chat with the team</p>
                     <a href="#" class="button">Join</a>
-                </div>
-                <div class="community-item">
-                    <div class="community-icon">📝</div>
-                    <h3>Medium</h3>
-                    <p>Read our in-depth articles and announcements</p>
-                    <a href="#" class="button">Read</a>
                 </div>
             </div>
         </div>
@@ -247,10 +296,21 @@
                 <a href="#community">Community</a>
             </div>
             <div class="social-links">
-                <a href="#" class="social-link">T</a>
-                <a href="#" class="social-link">D</a>
-                <a href="#" class="social-link">TG</a>
-                <a href="#" class="social-link">M</a>
+                <a href="#" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff">
+                        <path d="M20.317 4.369A19.791 19.791 0 0 0 15.725 3c-.184.328-.39.761-.534 1.104a18.315 18.315 0 0 0-5.383 0 12.6 12.6 0 0 0-.547-1.104 19.736 19.736 0 0 0-4.59 1.369c-2.91 4.273-3.705 8.428-3.305 12.537a19.994 19.994 0 0 0 5.932 2.974c.48-.649.91-1.339 1.284-2.057a12.88 12.88 0 0 1-2.016-.965c.17-.123.338-.252.5-.383a14.98 14.98 0 0 0 9.468 0c.163.136.332.264.5.383-.645.385-1.324.718-2.016.965.373.72.8 1.41 1.283 2.057a19.935 19.935 0 0 0 5.933-2.974c.484-4.715-.81-8.85-3.305-12.537zM8.06 13.826c-1.183 0-2.154-1.086-2.154-2.419 0-1.333.947-2.419 2.154-2.419 1.21 0 2.176 1.092 2.154 2.419 0 1.333-.947 2.419-2.154 2.419zm7.88 0c-1.183 0-2.154-1.086-2.154-2.419 0-1.333.947-2.419 2.154-2.419 1.21 0 2.176 1.092 2.154 2.419 0 1.333-.944 2.419-2.154 2.419z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff">
+                        <path d="M9.978 15.536l-.403 5.649c.578 0 .829-.25 1.125-.548l2.7-2.575 5.596 4.083c1.026.566 1.752.27 2.012-.95l3.642-17.06c.371-1.715-.621-2.39-1.72-1.963L1.274 10.31c-1.66.656-1.642 1.6-.283 2.026l5.856 1.829L19.49 6.697c.637-.4 1.216-.178.74.257z"/>
+                    </svg>
+                </a>
             </div>
             <p>&copy; 2025 Chill Pizza Guy Coin. All rights reserved.</p>
         </div>
